@@ -908,3 +908,109 @@
     border-width: 0.1rem;
 }
 
+.portfolio-item{
+    position: unset!important;
+}
+.portfolio-container{
+    height: 100%!important;
+}
+footer{
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+.smoke-effect #wave4 {
+    animation-duration: 6s;
+    opacity: .1;
+    animation-direction: reverse;
+}
+
+.smoke-effect .drop,.smoke-effect .wave {
+    fill: var(--col-deepfootcolor);
+}
+.smoke-effect .wave {
+    animation: wave 10s linear;
+    animation-iteration-count: infinite;
+    fill: #1b55a4;
+    z-index: 0;
+}
+.smoke-effect #wave3 {
+    animation-duration: 8s;
+    opacity: .4;
+}
+.smoke-effect #wave2 {
+    animation-duration: 5s;
+    animation-direction: reverse;
+    opacity: .2;
+}
+.smoke-effect #wave1 {
+    animation-duration: 7s;
+    opacity: .3;
+}
+@keyframes wave {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  footer {
+    border-radius: 85% 85% 0 0 / 70%;
+    width: 100%;
+    position: absolute;
+    /* left: 0; */
+;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: linear-gradient(177.98deg, #6244C5 -7.98%, #0493e3 135.61%) !important;
+    color: #fff;
+    text-align: left;
+    padding: 6vh 5%;
+}  
+.smoke-effect {
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0;
+    height: 150%;
+}
+.footer{
+    margin-bottom: 0!important;
+    padding-bottom: 0!important;
+}
+.text-muted {
+    color: #cecece !important;
+}
+hr{
+    margin: 0;
+}
+.smoke-effect {
+    pointer-events: none;
+}
+.navbar{
+    border-radius: 0 0 85% 85% / 30%;
+    padding: 2vh;
+    border: .5vh solid hsla(0, 0%, 67%, .1);
+}
+#home{
+    border-radius: 0 0 85% 85% / 30%;
+    padding: 2vh;
+}
+
+@media (max-width: 767px) {
+    footer{
+        border-radius: 85% 85% 0 0 / 30%;
+    }
+    .smoke-effect{
+        height: unset;
+    }
+}
+footer ul,footer p{
+    position: relative;
+}
